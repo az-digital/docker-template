@@ -9,7 +9,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: Publish to Registry
-      uses: elgohr/Publish-Docker-Github-Action@be578a6a248e4fd39ae9c80aea73734a20712685
+      uses: elgohr/Publish-Docker-Github-Action@v5
       with:
         name: azdigital/{{ REPO_NAME }}
         username: ${{ secrets.DOCKER_USERNAME }}
